@@ -7,115 +7,39 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.grid-container {
-  width: 100%;
-  max-width: 1200px;
+/* ---------------------- */
+/* Hero ish */
+
+.hero-gun {
+  background-image: url(/build/images/gunsmoke.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-/* ----------------------- */
-/* Clearfix */
-
-.row:before,
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.hero-slash {
+  background-image: url(/build/images/slashface.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-[class*='col-'] {
-  float: left;
-  min-height: 1px;
-  width: 8.33333333%;
-  padding: 12px; /* the gutter */
+.hero-scatter {
+  background-image: url(/build/images/scatter.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-/* ----------------------- */
-/* Columns */
-
-.col-1{ width: 33.33%; }
-.col-2{ width: 50%; }
-.col-3{ width: 83.33%; }
-.col-4{ width: 100%; }
-.col-5{ width: 100%; }
-.col-6{ width: 100%; }
-
-.row .col-2:last-of-type{
+.section-copy {
+  align-self: center;
   width: 100%;
 }
 
-.row .col-5 ~ .col-1{
-  width: 100%;
-}
-
-@media all and (max-width: 1200px) {
-  .col-1 {
-    width: 8.33333333%;
-  }
-
-  .col-2 {
-    width: 16.6666667%;
-  }
-
-  .col-3 {
-    width: 25%;
-  }
-
-  .col-4 {
-    width: 33.33333332%;
-  }
-  .col-5 {
-    width: 41.66666665%;
-  }
-
-  .col-6 {
-    width: 49.99999998%;
-  }
-
-  .col-7 {
-    width: 58.33333331%;
-  }
-
-  .col-8 {
-    width: 66.66666664%;
-  }
-
-  .col-9 {
-    width: 74.99999997%;
-  }
-
-  .col-10 {
-    width: 83.3333333%;
-  }
-
-  .col-11 {
-    width: 91.66666663%;
-  }
-
-  .col-12 {
-    width: 100%;
-  }
-}
-
-.header {
-  float: right;
-  height: 200px;
-}
-
-.main-nav {
-  display: inline;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-ul li {
-  display: inline-block;
-  list-style-type: none;
-}
-
-footer {
-  height: 100px;
+.inner {
+  min-height: 600px;
+  min-height: 100vh;
+  position: relative;
 }
 
 /* ----------------------- */
