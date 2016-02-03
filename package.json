@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "gulp": "*",
+    "fs": "*",
+    "browserify": "*",
+    "watchify": "*",
+    "babelify": "*",
+    "rimraf": "*",
+    "vinyl-source-stream": "*",
+    "lodash": "*",
+    "gulp-sass": "*",
+    "browser-sync": "*",
+    "gulp-util": "*",
+    "gulp-imagemin": "*",
+    "gulp-newer": "*"
+  }
+}
