@@ -1,0 +1,106 @@
+@font-face {
+	font-family: 'Fairfield';
+	src: url('../fonts/FairfieldLH55-Medium.eot');
+	src: local('☺'), url('../fonts/FairfieldLH55-Medium.woff') format('woff'), url('../fonts/FairfieldLH55-Medium.ttf') format('truetype'), url('../fonts/FairfieldLH55-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Simplon';
+	src: url('../fonts/Simplon_BP_Medium_1.eot');
+	src: local('☺'), url('../fonts/Simplon_BP_Medium_1.woff') format('woff'), url('../fonts/Simplon_BP_Medium_1.ttf') format('truetype'), url('../fonts/Simplon_BP_Medium_1.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// -----------------------------
+// Basic Type Styles
+
+body {
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-family: 'Simplon', sans-serif;
+}
+
+h1 {
+  font-size: 2.779rem;
+}
+
+h2 {
+  font-size: 4.632rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-size: 7.722rem;
+}
+
+p {
+  font-family: 'Fairfield', serif;
+  line-height: 1.5;
+  font-size: 1.667rem;
+}
+
+// --------------------------------------
+// Sections
+      // .text--X --- Section Heading
+      // .text--X-hl --- Section Highlight
+// --------------------------------------
+
+.text--activity {
+  color: #014295;
+}
+
+.text--activity-hl {
+  color: #9ab4ff;
+}
+
+.text--coffee {
+  color: #8c52a5;
+}
+
+.text--coffee-hl {
+  color: #e2a1fa;
+}
+
+.text--drinks {
+  color: #840839;
+}
+
+.text--drinks-hl {
+  color: #ff91ad;
+}
+
+.text--food {
+  color: #215210;
+}
+
+.text--food-hl {
+  color: #94c67d;
+}
+
+.text--ess {
+  color: #8c3110;
+}
+
+.text--ess-hl {
+  color: #ff9b71;
+}
+
+// -----------------------------
+// CTA Type --- e.g. 1/FOOD
+
+.text--cta {
+  font-size: 1rem;
+}
+// -------------------------------
+

@@ -1,78 +1,238 @@
-@import url(https://fonts.googleapis.com/css?family=Lato);
+@import 'typography';
 
-* { box-sizing: border-box; }
+/* ------------------------------ */
+// Hue Variables
+$blue:  #014295;
+$blue-hl:  #9ab4ff;
+$brown: #8c3110 ;
+$brown-hl: #ff9b71;
+$green: #215210;
+$green-hl: #94c67d;
+$purple: #8c52a5;
+$purple-hl: #e2a1fa;
+$pink: #840839 ;
+$pink-hl: #ff91ad;
+/* ------------------------------ */
+
+* { box-sizing: border-box;}
 
 body {
   background-color: #FCF8EF;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Simplon', sans-serif;
 }
 
-/* ---------------------- */
-/* Hero ish */
+/* ------------------------------ */
+/* Structure */
+/* ------------------------------ */
+.dest-adven,
+.dest-coffee,
+.dest-drinks,
+.dest-food,
+.dest-essen {
 
-.hero-gun {
-  background-image: url(/build/images/gunsmoke.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.hero-slash {
-  background-image: url(/build/images/slashface.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.hero-scatter {
-  background-image: url(/build/images/scatter.jpg);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.section-copy {
-  align-self: center;
+  height: 100vh;
   width: 100%;
-}
-
-.inner {
-  min-height: 600px;
-  min-height: 100vh;
   position: relative;
 }
 
-/* ----------------------- */
-/* Colors */
-
-.blue {
-  background-color: #3498db;
+.dest {     /* wrapper */
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 
-.clouds {
-  background-color: #ecf0f1;
+.dest-inner {     /* wrapper inside */
+  display: flex;
+  align-self: center;
+  height: 600px;
+  height: 50vh;
+  position: relative;
+  width: 50vw;
 }
 
-.dark {
-  background-color: #777777;
+.dest-description {     /* Destination description */
+  height: 50vh;
+  width: 40vw;
+  position: relative;
 }
 
-.blackish {
-  background-color: #474747;
+.title {
+  color: pink;
+  font-size: 2.779rem;
+  font-family: 'Simplon', sans-serif;
+
+  .dest-adven & { color: $green };
+  .dest-coffee & { color: $brown };
+  .dest-drinks & { color: $pink };
+  .dest-food & { color: $green };
+  .dest-essen & { color: $purple };
 }
 
-.purple {
-  background-color: #9b59b6;
+/* ------------------------------ */
+/* Decoration Structure -- Full Width Backgrounds */
+/* ------------------------------ */
+
+.deco-fit {
+  background-size: cover;
+  background-position: center center, center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed, fixed;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  .dest-adven & {
+    background-image: url(/build/images/bg-food-01.jpg);
+  }
+  .dest-coffee & {
+    background-image: url(/build/images/bg-food-01.jpg);
+  }
+  .dest-drinks & {
+    background-image: url(/build/images/bg-food-01.jpg);
+  }
+  .dest-food & {
+    background-image: url(/build/images/bg-food-01.jpg);
+  }
+  .dest-essen & {
+    background-image: url(/build/images/bg-food-01.jpg);
+  }
 }
 
-.sunflower {
-  background-color: #f1c40f;
+.deco-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+
+  .dest-adven & { background-color: $green };
+  .dest-coffee & { background-color: $brown };
+  .dest-drinks & { background-color: $green };
+  .dest-food & { background-color: $purple };
+  .dest-essen & { background-color: $pink };
 }
 
-.orange {
-  background-color: #e67e22;
+.deco-mline {
+  background-image: url(/build/images/meandering-line.svg);
+  background-size: contain;
+  background-position: center center, center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed, fixed;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 999;
 }
 
-.rose {
-  background-color: #e74c3c;
+/* ------------------------------ */
+
+/* ------------------------------ */
+
+
+// ---------------------------------
+//
+
+
+// ---------------------------------
+// CTAs -- e.g. the 1 / Food
+
+.text--cta {
+  width: 10vw;
+  position: relative;
+}
+
+.cta--num {
+  width: 15%;
+  position: relative;
+  left: -15px;
+}
+
+.cta--num:after {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  border-top: 1px solid white;
+  content: '';
+  position: absolute;
+  transform: rotate(90deg);
+  width: 60px;
+  left: -15px;
+  @media all and (min-width: 1000px) {
+
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    left: -40px;
+    top: 15px;
+    transform: rotate(-45deg);
+    width: 120px;
+  }
+}
+
+.cta--item {
+  width: 15%;
+  position: relative;
+  letter-spacing: .5em;
+}
+
+
+// ------------------------------
+// Helpers
+
+.sm-mx-auto {
+
+  @media all and (min-width: 640px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// -----------------------------
+// Buttons
+
+.btn-primary {
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+.vertical {
+  transform: rotate(90deg);
+  transform-origin: right bottom 0;
+}
+
+.btn-primary:after {
+  background-color: yellow;
+  height: 0;
+  content: '';
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid yellow;
+  border-top: 20px solid transparent;
+}
+
+// ----------------------------------
+// Utilities
+
+.lh0 {
+  line-height: 0;
+}
+
+.pos-rel {
+  position: relative;
 }

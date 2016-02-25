@@ -1,0 +1,324 @@
+@import 'typography';
+
+
+* { box-sizing: border-box;}
+
+body {
+  background-color: #FCF8EF;
+  font-family: 'Simplon', sans-serif;
+}
+
+.loud {
+  font-family: 'Simplon', sans-serif;
+  font-size: 64px;
+  letter-spacing: .1em;
+}
+
+/* ---------------------- */
+/* Hero ish */
+
+.hero-rza {
+  display: flex;
+  flex: 1 1 auto;
+  align-self: flex-stretch;
+  max-height: 70vw;
+  width: 100%;
+}
+
+.hero-gun {
+  background-image: url(/build/images/gunsmoke.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-slash {
+  background-image: url(/build/images/slashface.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-scatter {
+  background-image: url(/build/images/scatter.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* ------------------------------ */
+/* Backgrounds  */
+
+.bg-deco {
+  background-color: green;
+  background-blend-mode: overlay;
+}
+
+.bg-blend {
+  background-blend-mode: multiply;
+}
+
+.bg-texture {
+  background-image: url(/build/images/texture.png);
+  background-blend-mode: overlay;
+}
+
+.f1--bg {
+  background-image: url(/build/images/bg-food-01.jpg);
+  background-size: cover;
+  background-position: center center, center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed, fixed;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.mline {
+  background-image: url(/build/images/meandering-line.svg);
+  background-size: contain;
+  background-position: center center, center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed, fixed;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+// ---------------------------------
+// Destination Elements
+
+.dest-content {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.dest-inner {
+  display: flex;
+  align-self: center;
+  height: 600px;
+  height: 50vh;
+  position: relative;
+  width: 50vw;
+}
+
+.dest-description {
+  height: 50vh;
+  width: 40vw;
+  position: relative;
+}
+
+// ---------------------------------
+// CTAs -- e.g. the 1 / Food
+
+.text--cta {
+  width: 10vw;
+  position: relative;
+}
+
+.cta--num {
+  width: 15%;
+  position: relative;
+  left: -15px;
+}
+
+.cta--num:after {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+  border-top: 1px solid white;
+  content: '';
+  position: absolute;
+  transform: rotate(90deg);
+  width: 60px;
+  left: -15px;
+  @media all and (min-width: 1000px) {
+
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    left: -40px;
+    top: 15px;
+    transform: rotate(-45deg);
+    width: 120px;
+  }
+}
+
+.cta--item {
+  width: 15%;
+  position: relative;
+  letter-spacing: .5em;
+}
+
+.dest--arrow {
+  height: 20px;
+  width: 60px;
+  position: relative;
+}
+
+// ------------------------------
+// Helpers
+
+.sm-mx-auto {
+
+  @media all and (min-width: 640px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// --------------------------------
+
+.anticon {
+  background-image: url(/build/images/anticon.jpg);
+}
+
+.wutang {
+  background-image: url(/build/images/wutang.png);
+}
+
+.weathermen {
+  background-image: url(/build/images/weathermen.jpg);
+}
+
+.scatter {
+  background-image: url(/build/images/scatter.jpg);
+}
+
+.gunsmoke {
+  background-image: url(/build/images/gunsmoke.jpg);
+}
+
+.slashface {
+  background-image: url(/build/images/slashface.jpg);
+}
+
+.tag {
+  background-image: url(/build/images/tag.png);
+}
+
+.noise {
+  background-image: url(/build/images/noise-texture.png);
+}
+
+.rza {
+  background-image: url(/build/images/rza.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.rza2 {
+  width: 100%;
+  height: 300px;
+}
+
+/* ------------------------------ */
+/* Section Copy */
+
+.section-copy {
+  align-self: center;
+  width: 100%;
+}
+
+.dest-container {
+  min-height: 600px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 64px;
+}
+
+.text-vertical {
+  transform: rotate(90deg);
+  transform-origin: right top 0;
+  position: relative;
+  // -webkit-transform: rotate(-90deg);
+  // -moz-transform: rotate(-90deg);
+  // -ms-transform: rotate(-90deg);
+}
+
+
+// -----------------------------
+// Buttons
+
+.cyoa-btn {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.cyoa-btn:after {
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid red;
+}
+
+.btn-vertical {
+  transform: rotate(90deg);
+  transform-origin: right bottom 0;
+}
+
+/* ------------------------------ */
+/* Rounding Utilities */
+
+.rounded-100 {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
+}
+
+.rounded-200 {
+  max-width: 200px;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+
+  img {
+    display: inline;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+  }
+}
+
+// ----------------------------------
+// Utilities
+
+.lh0 {
+  line-height: 0;
+}
+
+.pos-rel {
+  position: relative;
+}
